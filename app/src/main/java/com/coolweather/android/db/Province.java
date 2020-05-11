@@ -1,6 +1,8 @@
 package com.coolweather.android.db;
 
-public class Province {
+import org.litepal.crud.LitePalSupport;
+
+public class Province extends LitePalSupport {
     private int id;
     private String provinceName;
     private int provinceCode;
@@ -28,4 +30,5 @@ public class Province {
     public void setProvinceCode(int provinceCode) {
         this.provinceCode = provinceCode;
     }
+
 }
